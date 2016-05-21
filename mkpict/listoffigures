@@ -1,0 +1,829 @@
+List of figures, captions, and files.
+
+NOTES:
+1) ALL figure files go in the 'pictures' subdirectory
+2) files ending in .fig were created using xfig using the transdev package
+
+------------------------------------------------------------------
+
+1.1    Input output relation for a transfer function
+       syst1.latex  (pure latex, derived from xfig)
+	   Referenced in intropart/introchap.tex
+1.2    Realization of the AR part of a transfer function
+       transfer1.latex  (pure latex, derived from xfig)
+	   Referenced in intropart/introchap.tex
+1.3    Realization of a transfer function
+       transfer2.latex   (pure latex, derived from xfig)
+	   Referenced in intropart/introchap.tex
+1.4    Realization of a transfer function with state variable labels
+       transfer3.latex   (pure latex, derived from xfig)
+	   Referenced in intropart/introchap.tex
+1.5    Prediction error
+	   predict1.latex    (pure latex, derived from xfig)
+	   Referenced in intropart/introchap.tex
+1.6    Linear predictor as an inverse system
+       predict2.latex    (pure latex, derived from xfig)
+	   Referenced in intropart/introchap.tex
+1.7    PSD input and output
+       syst2.latex      (pure latex, derived from xfig)
+	   Referenced in intropart/introchap.tex
+1.8    Representation of an adaptive filter
+       adfilt1.tex, adfilt1.ps --- derived from adfilt1.fig
+	   Referenced in intropart/introchap.tex
+1.9    Identification of an unknown plant
+	   adfiltsysid.tex, adfiltsys.ps --- derived from adfiltsysid.fig
+	   Referenced in intropart/introchap.tex
+1.10   Adapting to the inverse of an unknown plant
+	   adfiltinvsys.tex, adfiltinvsys.ps --- derived from adfiltinvsys.tex
+	   Referenced in intropart/introchap.tex
+1.11   An adaptive predictor
+	   adfiltpred.tex, adfiltpred.ps --- derived from adfiltpred.fig
+	   Referenced in intropart/introchap.tex
+1.12   Configuration for interference cancellation
+	   adcancel.tex, adcancel.ps --- derived from adcancel.fig
+	   Referenced in intropart/introchap.tex
+1.13   The Gaussian density
+	   plotgauss.eps --- Matlab plot file (plotgauss.m)
+	   Referenced in intropart/introchap.tex
+1.14   Demonstration of the central limit theorem
+	   unif1.eps, unif2.eps, unif3.eps --- Matlab plot files
+       (plotgauss2.m)
+	   Referenced in intropart/introchap.tex
+1.15   Plot of 2-dimensional Gaussian distribution
+	   gauss21.eps, gauss22.eps --- Matlab plot files (plotgauss3.m)
+	   Referenced in intropart/introchap.tex
+1.16   A simple Markov model
+	   markov1.tex, markov1.ps --- derived from markov1.fig
+	   Referenced in intropart/introchap.tex
+1.17   Illustration of a hidden Markov model
+	   markov2.tex, markov2.ps --- derived from markov2.fig
+	   Referenced in intropart/introchap.tex
+1.18   Illustration of the concept of an HMM
+	   hmm.tex, hmm.ps --- derived from hmm.fig
+	   Referenced in intropart/introchap.tex
+1.19   Binary symmetric channel model
+	   bsc1.tex, bsc1.ps, bsc3.tex, bsc3.ps --- derived from bsc1.fig
+       and bsc2.fig
+	   Referenced in intropart/proofs.tex
+1.20   LFSR realization
+	   lfsr1.tex, lfsr1.ps --- derived from lfsr1.fig
+	   Referenced in intropart/berlmassey.tex
+1.21   Alternative LFSR realization
+	   lfsr2.tex, lfsr2.ps --- derived from lfsr2.fig
+	   Referenced in intropart/berlmassey.tex
+1.22   A binary LFSR and its output
+	   lfsr4a.latex --- pure latex
+	   lfsr4.latex --- pure latex -- derived from xfig
+	   Referenced in intropart/berlmassey.tex
+P1.4-17 (diagram in homework problem
+	   transfer5.latex --- pure latex derived from xfig
+1.23   Simple feedback configuration
+	   feedback1.tex, feedback1.ps --- derived from feedback1.fig
+P1.9.59 (diagram in homework problem)
+	   lfsr5.latex --- pure latex derived from xfig
+
+2.1	   Illustration of the triangle inequality
+	   triineq.tex, triineq.ps --- derived from triineq.fig
+	   Referenced in linalgpart/basics.tex
+2.2	   Quantization of the vector $\xbf$
+	   quant1.tex, quant1.ps --- derived from quant1.fig
+	   Referenced in linalgpart/basics.tex	
+2.3	   Comparison of d_\infty and d_2 metrics   
+	   functnba.tex, funtnba.ps
+	   functnbb.tex, funtnbb.ps --- derived from xfig
+	   Referenced in linalgpart/basics.tex	
+ball   ball on p. 79
+	   bx0.tex, bx0.ps -- derived from xfig
+	   Referenced in linalgpart/basics.tex	
+2.4	   x_0 is interior, x_2 is exterior, and x_1 is neither interior
+	   inex.tex, inex.ps --- from xfig
+	   Referenced in linalgpart/basics.tex	
+2.5	   Illustration of open and closed sets
+	   open.tex, open.ps
+	   closed.tex, closed.ps --- from xfig
+	   Referenced in linalgpart/basics.tex	
+2.6	   The function f_n(t)
+	   functseq.tex, functseq.ps --- from xfig
+	   Referenced in linalgpart/basics.tex	
+2.7	   Illustration of Gibbs phenomenon
+	   gibbs.ps --- Matlab file (fourser.m)
+	   Referenced in linalgpart/basics.tex	
+2.8	   A subspace of $\Rbb^3$
+	   plan1.tex, plan1.ps --- from xfig
+	   Referenced in linalgpart/vectsp.tex
+2.9	   A triangle inequality interpretation
+	   triineq2.tex, triineq2.ps -- from xfig
+	   Referenced in linalgpart/vectsp.tex
+2.10   Unit spheres in $\Rbb^2$ under various norms
+	   spheres.tex, spheres.ps --- from xfig
+	   Referenced in linalgpart/vectsp.tex
+2.11   Chebyshev polynomials...
+	   cheby1.eps  --- Matlab file (chebyplot.m)
+	   Referenced in linalgpart/vectsp.tex
+2.12   A space and its orthogonal complement
+	   orthogspace1.tex, orthogspace1.ps --- from xfig
+	   Referenced in linalgpart/vectsp.tex
+2.13   Disjoint lines in $\Rbb^2$
+	   disjoint1.tex, disjoint1.ps -- from xfig
+	   Referenced in linalgpart/vectsp.tex
+2.14   Decomposition of $\xbf$ into disjoint components
+	   disjoint2.tex disjoint2.ps -- from xfig
+	   Referenced in linalgpart/vectsp.tex
+2.15   Orthogonal projection finds the closest point in $V$ to $\xbf$
+	   orthogproj1.tex, orthogproj1.ps -- from xfig
+	   Referenced in linalgpart/vectsp.tex
+2.16   Orthogonal projection onto the space spanned by some vectors
+	   orthogproj2.tex, orthogproj2.ps -- from xfig
+	   Referenced in linalgpart/vectsp.tex
+2.17   The projection theorem
+	   proj1.tex, proj1.ps -- from xfig
+	   Referenced in linalgpart/vectsp.tex
+2.18   The first steps of the Gram-Schmidt process
+	   gramschmidt1.tex, gramschmidt1.ps -- from xfig
+	   Referenced in linalgpart/vectsp.tex
+2.19   Third step of the Gram-Schmidt process
+	   gramschmidt2.tex, gramschmidt2.ps -- from xfig
+	   Referenced in linalgpart/vectsp.tex
+2.20   The parallelogram law
+	   parallel.tex, parallel.ps -- from xfig
+	   Referenced in linalgpart/vectsp.tex
+2.21   Functions to orthogonalize
+	   gramschmidt3.tex, gramschmidt3.ps -- from xfig
+	   Referenced in linalgpart/vectsp.tex
+
+3.1	   The approximation problem
+	   orthogproj3.tex, orthogproj3.ps -- from xfig
+	   Referenced in linalgpart/vectap.tex
+3.2	   Approximation with one and two vectors
+	   orthogproj4.tex, orthogproj4.ps
+	   orthogproj5.tex, orthogproj5.ps -- from xfig
+	   Referenced in linalgpart/vectap.
+3.3	   An error surface for two variables
+	   quaderr.eps -- Matlab file (plotJsurf.m)
+	   Referenced in linalgpart/vectap.
+3.4	   Projection solution
+	   orthogproj6.tex,orthogproj6.ps -- from xfig
+	   Referenced in linalgpart/vectap.
+3.5	   Statistician's Pythagorean theorem
+	   pythag1.tex,pythag1.ps -- from xfig
+	   Referenced in linalgpart/vectap
+3.6	   Comparison of LS, WLS, and Taylor series approximations to $e^t$
+	   hilb1.eps -- Matlab file (hilb1.m, then move legend)
+	   Referenced in linalgpart/vectap
+3.7	   A discrete function and the error its approximation
+	   discapprox1.eps, discapprox2.eps -- Matlab file (discapprox.m)
+	   Referenced in linalgpart/vectap
+3.8	   Data for regression
+	   regress1.eps, regress2.eps -- Matlab file (test2regress.m)
+	   Referenced in linalgpart/vectap
+3.9	   Illustration of least-squares and weighted least squares
+	   regress3.eps -- Matlab file (test2regress2.m)
+	   Referenced in linalgpart/vectap
+3.10   Least-squares equalizer example
+	   equalizer1.tex, equalizer1.ps -- from xfig
+	   Referenced in linalgpart/vectap
+3.11   Equalizer problem
+	   equalizer2.tex, equalizer2.ps -- from xfig
+	   Referenced in linalgpart/vectap
+3.12   Contour plot of an error surface
+	   wftestcont.eps -- Matlab file (wftest.m)
+	   Referenced in linalgpart/vectap
+3.13   Pole-zero plot of rational $S_y(s)$
+	   pictures/pzrat.latex
+	   Referenced in ndetest/freqfilt
+3.14   $y_t$ as the output of a linear system driven by white noise.
+	   pictures/ytout.latex
+	   Referenced in ndetest/freqfilt
+3.15   $\nu_t$ as the output of a linear system driven by $y_t$
+	   pictures/vtout.latex
+	   Referenced in ndetest/freqfilt
+3.16   The optimal filter as the cascade of a whitening filter and a
+	   Wiener filter with white noise inputs 
+	   pictures/whsifilt.latex
+	   Referenced in ndetest/freqfilt
+3.17   Minimum norm to a linear variety
+	   linvar1.tex, linvar1.ps -- from xfig
+	   Referenced in linalgpart/vectap
+3.18   Magnitude response for filters designed using IRLS
+	   irwlsp4.eps, irwlsp10.eps -- Matlab file (testirwls.m)
+	   Referenced in linalgpart/wls.tex
+3.19   Legendre polynomials ...
+	   legendre1.eps -- Matlab file (legendreplot.m)
+	   Referenced in functpart/orthogpoly.m
+3.20   A function $f(t)$ and its projection onto V_0 and V_{-1}
+	   wavelet1.tex, wavelet1.ps -- from xfig
+	   Referenced in linalgpart/wavelets.tex
+3.21   The simplest scaling and wavelet functions
+	   wavelet2.tex, wavelet2.ps -- from xfig
+	   Referenced in linalgpart/wavelets.tex
+3.22   Illustration of scaling and wavelet functions
+	   wave4.ps, wave6.ps, wave8.ps, wave10.ps -- Matlab file (plotwavelet.m)
+	   Referenced in linalgpart/wavelets.tex
+3.23   Illustration of a wavelet transform
+	   wavelet3.tex, wavelet3.ps -- from xfig
+3.24   Multirate interpretation of wavelet transform
+	   wavelet4.tex, wavelet4.ps -- from xfig
+	   Referenced in linalgpart/wavelets.tex
+3.25   Illustration of the inverse wavelet transform
+	   wavelet5.tex,  wavelet5.ps -- from xfig
+	   Referenced in linalgpart/wavelets.tex
+3.26   Filtering interpretation of an inverse wavelet transform
+	   wavelet6.tex, wavelet6.ps -- from xfig
+	   Referenced in linalgpart/wavelets.tex
+3.27   Perfect reconstruction filter bank
+	   wavelet7.tex, wavelet7.ps -- from xfig
+	   Referenced in linalgpart/wavelets.tex
+3.28   Two basis functions, and some functions represented using them
+	   digfun1.tex, digfun1.ps,	digfun2.tex, digfun2.ps, digfun3.tex,digfun3.ps
+	   from xfig
+	   Referenced in linalgpart/matchef.tex
+3.29   Implementations of digital receiver processing
+	   digfun4.tex, digfun4.ps, digfun5.tex, digfun5.ps -- from xfig
+	   Referenced in linalgpart/matchef.tex
+3.30   Digital receiver processing
+	   digfun7.tex, digfun7.ps -- from xfig
+	   Referenced in linalgpart/matchef.tex
+3.31   Implementation of a matched filter receiver
+	   digfun6.tex, digfun6.ps -- from xfig
+	   Referenced in linalgpart/matchef.tex
+3.32   PSK signal constellation and detection example
+	   psk1.tex, psk1.ps -- from xfig
+	   Referenced in linalgpart/matchef.tex
+3.33   Illustration of concepts of various signal constellations
+	   ook1.tex, ook1.ps, bpsk1.tex, bpsk1.ps, ppm1.tex, ppm1.ps,
+	   qam1.tex, qam1.ps -- from xfig
+	   Referenced in linalgpart/matchef.tex
+3.34   Block diagram for detection processing
+	   matched.tex, matched.ps -- from xfig
+	   Referenced in linalgpart/matchef.tex
+
+4.1	   Geometry of the operator norm
+	   norm1.tex, norm1.ps -- from xfig
+	   Referenced in linalgpart/matnorm.tex
+4.2	   Intersections of lines form solutions of systems of linear equations
+	   lines1.tex, lines1.ps -- from xfig
+	   Referenced in linalgpart/mateq.tex
+4.3	   Intersecting planes
+	   planes1.tex, planes1.ps,planes2.tex, planes2.ps -- from xfig
+	   Referenced in linalgpart/mateq.tex
+4.4	   The four fundamental subspaces of a matrix operator
+	   fourspace.tex, fourspace.ps -- from xfig
+	   Referenced in linalgpart/mateq.tex
+4.5	   Operation of the pseudo-inverse
+	   fourspace2.tex, fourspace2.ps -- from xfig
+	   Referenced in linalgpart/mateq.tex
+4.6	   Demonstration of an ill-conditioned linear system
+	   illcond1.tex, illcond1.ps -- from xfig
+	   Referenced in linalgpart/matcond.tex
+4.7	   Condition of the Hilbert matrix
+	   condhilb.eps -- Matlab file (condhilb.m)
+	   Referenced in linalgpart/matcond.tex
+4.8	   Condition number for a bad idea
+	   matcond.ps -- Matlab (matcond2.m)
+	   Referenced in linalgpart/matcond.tex
+4.9	   RLS adaptive equalizer
+	   equalizer3.tex, equalizer3.ps -- from xfig
+	   Referenced in linalgpart/matinv.tex
+4.10   Illustration of RLS equalizer performance
+	   rls1hopt.eps, rls1err.eps, rls1hrls.eps -- from Matlab (testrls.m)
+	   Referenced in linalgpart/matinv.tex
+4.11   System identification using the RLS adaptive filter
+	   adfiltsysid.tex, adfiltsysid.ps -- from xfig
+	   Referenced in linalgpart/matinv.tex
+4.12   Illustration of system identification using the RLS filter
+	   rls2htrue.ep, rls2err.eps, rls2hrls.eps -- from Matlab (testrls2.m)
+	   Referenced in linalgpart/matinv.tex
+
+5.1	   The Householder transformation of a vector
+	   householder1.tex, householder1.ps -- from xfig
+	   Referenced in linalgpart/matfact.tex
+5.2	   Zeroing elements of a vector by a Householder transformation
+	   householder.tex, householder.ps -- from xfig
+	   Referenced in linalgpart/matfact.tex
+5.3	   Two-dimensional rotation
+	   rot1.tex, rot1.ps, rot2.tex, rot2.ps -- from xfig
+	   Referenced in linalgpart/matfact.tex
+
+6.1	   The direction of eigenvectors is not modified by $A$
+	   eigv1.tex, eigv1.ps -- from xfig
+	   Referenced in linalgpart/eigen.tex
+6.2	   The geometry of quadratic forms
+	   eigdir1.eps, eigdir2.eps -- from Matlab (eigdir.m)
+	   Referenced in linalgpart/eigen.tex
+6.3	   Level curves for a Gaussian distribution
+	   eigdir3.eps -- from Matlab (eigdir2.m)
+	   Referenced in linalgpart/eigen.tex
+6.4	   The maximum principal
+	   ellipsoid1.eps, ellipsoid2.eps -- from Matlab (surf1.m)
+	   Referenced in linalgpart/eigen.tex
+6.5	   Illustration of Gershgorin disks
+	   gersh1.tex, gersh1.ps -- from xfig
+	   Referenced in linalgpart/gersh.tex
+6.6	   Scatter data for principal component analysis
+	   scatter1.eps  --- from Matlab (scatter.m)
+	   Referenced in linalgpart/eigen.tex
+6.7	   Noisy signal to be filtered using an eigenfilter $\hbf$
+	   eigfilr1.tex, eigfilr1.ps -- from xfig
+	   Referenced in linalgpart/eigen.tex
+6.8	   Magnitude response specifications for a lowpass filter
+	   hd1.tex, hd1.ps -- from xfig
+	   Referenced in linalgpart/eigen.tex
+6.9	   Eigenfilter response
+	   testeigf1.eps --- from Matlab (testeigfil.m)
+	   Referenced in linalgpart/eigen.tex
+6.10   Response of a constrained eigenfilter
+	   testeigf2a.eps, testeigf2b.eps --- from Matlab (testeigfil2.m)
+	   Referenced in linalgpart/eigen.tex
+6.11   The MUSIC spectrum for example \ref{exm:music1}
+	   music1.eps -- from Matlab (testmusic.m)
+	   Referenced in linalgpart/eigen.tex
+6.12   Plant with reference input and feedback control
+	   plant1.tex, plant1.ps -- from xfig
+	   Referenced in linalgpart/moveeig.tex
+6.13   State diagram for a constrained channel}
+	   constate1.tex, constate1.ps -- from xfig
+	   Referenced in linalgpart/conchannel.tex
+6.14   Direct and indirect transmission through a noisy channel
+	   lr1.tex, lr1.ps, lr2.tex, lr2.ps -- from xfig
+	   Referenced in linalgpart/eigen.tex
+6.15   Expansion and interpolation using multirate processing
+	   multirate1.tex, multirate1.ps -- from xfig
+	   Referenced in linalgpart/eigen.tex
+6.16   Transformation from a general matrix to 1st companion form
+	   plant2.tex, plant2.ps -- from xfig
+	   Referenced in linalgpart/eigen.tex
+
+7.1	   Illustration of the sensitive direction
+	   illcond2.tex, illcond2.ps -- from xfig
+	   Referenced in linalgpart/svd.tex
+7.2	   Comparison of least-squares and total least-squares
+	   tls1.tex, tls1.ps, tls2.tex, tls2.ps -- from xfig
+	   Referenced in linalgpart/svd.tex
+7.3	   PTLS linear parameter identification (solid line is PTSL solution)	   
+	   ptls1.eps -- from Matlab (tettls.m)
+	   Referenced in linalgpart/svd.tex
+7.4	   A data set rotated relative to another data set
+	   procruses.eps -- from Matlab (testrog.m)
+	   Referenced in linalgpart/svd.tex
+
+8.1	   First two stages of a lattice prediction filter
+	   lattfilt1.tex, lattfilt1.ps, lattfilt2.tex, lattfilt2.ps --
+	   from xfig
+	   Referenced in linalgpart/specialmat.tex
+8.2	   The $k$th stage of a lattice filter
+	   lattfilt3.tex, lattfilt3.ps --- from xfig
+	   Referenced in linalgpart/specialmat.tex
+8.3	   Comparison of $S(\omega)$ and the eigenvalues of...
+	   eigspect.eps --- from Matlab (eigdist.m)
+	   Referenced in linalgpart/specialmat.tex
+
+9.1	   4-point fast Hadamard transform
+	   hadamard1.tex, hadamard1.ps -- from xfig
+	   Referenced in linalgpart/kronecker.tex
+9.2	   D6 DFT using Kronecker decomposition
+	   dft6.tex, dft6.ps -- from xfig
+	   Referenced in linalgpart/kronecker.tex
+
+10.1   Loss function (or matrix) for Odd or Even game
+	   loss1.latex -- pure latex figure
+	   Referenced in ndetest/detestintro.tex
+10.2   Elements of the statistical decision game
+	   detest1.tex, detest1.ps -- from xfig
+	   Referenced in ndetest/detestintro.tex
+10.3   A simple binary communications channel
+	   bsc1.tex, bsc1.ps -- from xfig	   
+	   Referenced in ndetest/detestintro.tex
+10.4   A typical payoff matrix for the Prisoner's dilemma
+	   A latex table
+	   Referenced in ndetest/detestintro.tex
+
+11.1   Illustration of threshold for Neyman-Pearson test
+	   npthresh.latex -- pure latex figure
+	   Referenced in ndetest/neymanpearson.tex
+11.2   Scalar Gaussian detection of the mean
+	   htest1.tex, htest1.ps -- from xfig
+	   Referenced in ndetest/neymanpearson.tex
+Q(x)   Figures in Q(x) box
+	   qfun1.tex, qfun1.ps -- from xfig
+	   qf.esp -- from Matlab (qf.m)
+	   Referenced in ndetest/neymanpearson.tex
+11.3   Error probabilities for Gaussian variables with different means...
+	   detest2.tex, detest2.ps, detest3.tex, detest3.ps -- from xfig
+	   Referenced in ndetest/neymanpearson.tex
+11.4   ROC for test of means of Gaussian
+	   roc1.ps, roc1.tex --- from xfig
+	   Referenced in ndetest/neymanpearson.tex
+11.5   Test for vector Gaussian random variable with different means	   
+	   htest2.tex, htest2.ps -- from xfig
+	   Referenced in ndetest/neymanpearson.tex
+11.6   Probability of error for BPSK signalling
+	   plotbpsk.eps -- from Matlab (plotbpsk.m)
+	   Referenced in ndetest/neymanpearson.tex
+11.7   An orthogonal and antipodal binary signal constellation
+	   binconst1.tex, binconst1.ps -- from xfig
+	   Referenced in ndetest/neymanpearson.tex
+11.8   ROC: normal variables with equal means and unequal variances
+	   roc2.tex, roc2.ps -- from xfig
+	   Referenced in ndetest/neymanpearson.tex
+11.9   Demonstration of concave property of the ROC
+	   rocproof.tex, rocproof.ps -- from xfig
+	   Referenced in ndetest/neymanpearson.tex
+11.10  Illustration of even-odd observations
+	   evenoddch.tex, evenoddch.ps -- from xfig
+	   Referenced in ndetest/bayesdec.tex
+11.11  Risk function for statistical Odd or Even Game
+	   oddevenrisk.latex -- pure latex figure
+	   Referenced in ndetest/bayesdec.tex
+11.12  A binary channel
+	   bsclambda.latex --- pure latex figure
+	   Referenced in ndetest/bayesdec.tex
+11.13  Risk function for the binary channel
+	   bscl.latex --- pure latex figure
+	   Referenced in ndetest/bayesdec.tex
+11.14  Loss function
+	   lossfunct.latex --- pure latex figure
+	   Referenced in ndetest/bayesdec.tex
+11.15  Bayes risk for a decision
+	   bayes1.eps --- from Matlab (bayes1.m)
+	   Referenced in ndetest/bayesdec.tex
+11.16  Geometry of the decision space for multivariate Gaussian detection
+	   detest4.tex, detest4.ps -- from xfig
+	   Referenced in ndetest/bayesdec.tex
+11.17  Decision boundaries for a 4-way decision problem
+	   bayesbound1eps, bayesbound2.eps -- from Matlab (bayes4.m)
+	   Referenced in ndetest/bayesdec.tex
+11.18  Venn diagram for the union of two sets
+	   union1.tex, union1.ps -- from xfig
+	   Referenced in ndetest/bayesdec.tex
+1.19   Bound on the probability of error for PSK signaling
+	   psk2.tex, psk2.ps -- from xfig
+	   Referenced in ndetest/bayesdec.tex
+11.20  A test biased by $\gamma \cbf$
+	   detest5.tex, detest5.ps -- from xfig
+	   Referenced in ndetest/invariant.tex
+11.21  Channel gain and rotation
+	   sharf1.tex, sharf1.ps -- from xfig
+	   Referenced in ndetest/invariant.tex
+(I0)   Plot of I0 function in textbox
+	   plotI0.eps -- from Matlab (plotI0.m)
+	   Referenced in ndetest/invariant.tex
+11.22  Incoherent binary detector
+	   incohere1.tex,incohere2.ps -- from xfig
+	   Referenced in ndetest/invariant.tex
+11.23  Probability of error for BPSK
+	   plotbpsk.eps -- from Matlab (plotbpsk.m)
+	   Referenced in ndetest/contdec.tex
+11.24  A projection approach to signal detection
+	   detest7.tex, detest7.ps -- from xfig
+	   Referenced in ndetest/contdec.tex
+11.25  Bayes envelope function
+	   bayesenv.tex, envelop.ps  --- source unclear (Wynn)
+	   Referenced in ndetest/bayesdec.tex
+11.26  Bayes envelope function: normal variables with unequal means and equal variances
+	   bayes2.eps -- from Matlab (bayes2.m)
+	   Referenced in ndetest/bayesdec.tex
+11.27  Bayes envelope function
+	   bayes3.eps -- from Matlab (bayes1.m)
+	   Referenced in ndetest/bayesdec.tex
+11.28  Bayes envelope for binary channel
+	   binchan1.eps -- from Matlab (binchan.m)
+	   Referenced in ndetest/bayesdec.tex
+11.29  Geometrical interpretation of the risk set
+	   riskset1.tex, riskset.ps -- source unclear (Wynn)
+	   Referenced in ndetest/bayesdec.tex
+11.30  Geometrical interpretation of the minimax rule
+	   minimax1.tex minimax.ps -- source unclear (Wynn)
+	   Referenced in ndetest/bayesdec.tex
+11.31  The risk set and its relation to the Neyman-Pearson test
+	   rocbayes1.eps, rocbayes2.eps -- from Matlab (roc3.m)
+	   Referenced in ndetest/bayesdec.tex
+11.32  Risk Function for Statistical Odd or Even Game
+	   riskrun.latex -- pure latex figure
+	   Referenced in ndetest/bayesdec.tex
+11.33  Risk set for ``odd or even'' game
+	   oddeven.eps -- Matlab function (oddeven.m)
+	   Referenced in ndetest/bayesdec.tex
+11.34  Risk set for the binary channel
+	   binchan2.eps -- Matlab function (binchan.m)
+	   Referenced in ndetest/bayesdec.tex
+11.35  Regions for bounding the $Q$ function
+	   qfun2.tex, qfun2.ps -- from xfig
+	   Referenced in ndetest/neymanpearson.tex
+11.36  Some signal constellations
+	   detproba.tex, detproba.ps, detprobb.tex, detprobb.ps, detprobc.tex, detprobc.ps
+	   From xfig
+	   Referenced in ndetest/neymanpearson.tex
+11.37  Channel with Laplacian noise and decision region
+	   lap1.tex, lap1.ps, lap2.tex, lap2.ps -- from xfig
+	   Referenced in ndetest/neymanpearson.tex
+(exercise)		  (Binary symmetric channel model)
+	   bsclambda.tex, bsclambda.ps -- from xfig
+	   Referenced in ndetest/neymanpearson.tex
+
+12.1   Empiric distribution function
+	   empiric.tex, empiric.ps -- from xfig
+	   Referenced in ndetest/mlest.tex
+12.2   Explicitly computing the estimate of the phase
+	   phasest1.tex, phasest1.ps -- from xfig
+	   Referenced in ndetest/mlest.tex
+12.3   A phase-locked loop
+	   phasest2.tex, phasest2.ps -- from xfig
+	   Referenced in ndetest/mlest.tex
+12.4   Illustration of the update and propagate steps in sequential estimation	   
+	   seqest.tex, seqest.ps, seqest2.tex, sequest2.ps -- from xfig
+	   Referenced in ndetest/bayesest.tex
+12.5   Acoustic level framework
+	   aclevel.tex, aclevel.ps -- from xfig
+	   Referenced in ndetest/mlest.tex
+12.6   Equivalent representations for the Gaussian estimation problem
+	   gassugen1.tex, gassugen1.ps, gassugen2.tex, gassugen2.ps, gassugen3.tex, gassugen3.ps, 
+	   gassugen4.tex, gassugen4.ps -- all from xfig
+	   Referenced in ndetest/mlest.tex
+
+13.1   Illustration of Kalman filtering results
+	   kalex1.eps -- from Matlab (kalex1.m)
+	   Referenced in ndetest/stateest.tex
+
+14.1   Illustration of an orbit of a function with an attractive fixed point
+	   attract1.eps -- from Matlab (attract1.m)
+	   Referenced in iterpart/newton.tex
+14.2   Illustration of an orbit of a function with a repelling fixed point
+	   attract2.eps -- from Matlab (attract2.m)
+	   Referenced in iterpart/newton.tex
+14.3   Examples of dynamical behavior on the quadratic logistic map.
+	   logistic1a.eps, logistic1b.eps, logistic1c.eps, logistic1d.eps
+	   -- from Matlab (ifsfig1.m)
+	   Referenced in iterpart/newton.tex
+14.4   Illustration of $g(x)=f(f(x))$ when $\lambda=3.2$
+	   logistic2.eps -- from Matlab (ifs4.m)
+	   Referenced in iterpart/newton.tex
+14.5   Iterations of an affine transformations acting on a square
+	   affine1.eps  -- from Matlab (ifs2.m)
+	   Referenced in iterpart/newton.tex
+14.6   Example function for Newton's method
+	   newt1.eps -- from Matlab (newt1.m)
+	   Referenced in iterpart/newton.tex
+14.7   Contour plots of Rosenbrock's function and Newton's method
+	   rosenbrock1.eps -- from Matlab (newt2.m)
+	   Referenced in iterpart/newton.tex
+14.8   A function with local and global minima
+	   gmin1.tex, gmin1.ps -- from xfig
+	   Referenced in iterpart/newton.tex
+14.9   Convergence of steepest descent on a quadratic function.
+	   steepest1a.eps, steepest1b.eps --x from Matlab (ellipse.m)
+	   Referenced in iterpart/newton.te
+14.10  Error components in principal coordinates for steepest descent
+	   steepest2a.eps, steepest2b.eps -- from Matlab (steeperrplto.m)
+	   Referenced in iterpart/newton.tex
+14.11  Error in the LMS algorithm for $\mu=0.075$ and $\mu=0.0075$...
+	   lms1err.eps -- from Matlab (testlms.m)
+	   Referenced in iterpart/lms.tex
+14.12  Optimal equalizer coefficients and adaptive equalizer coefficients
+	   lmsfiltcoeff.eps -- from Matlab (testlms.m)
+	   Referenced in iterpart/lms.tex
+14.13  Representation of the layers of an artificial neural network
+	   nn1.tex, nn1.ps -- from xfig
+	   Referenced in iterpart/nn.tex
+14.14  An artificial neuron
+	   nn3.tex, nn3.ps -- from xfig
+	   Referenced in iterpart/nn.tex
+14.15  Notation for a multi-layer neural network
+	   nn4.tex, nn4.ps -- from xfig
+	   Referenced in iterpart/nn.tex
+14.16  The sigmoidal nonlinearity
+	   sigmoid.eps -- from Matlab (sigmoid.m)
+	   Referenced in iterpart/nn.tex
+14.17  Pattern recognition problem for a neural network
+	   nn1.out.eps, nn3out.eps, nn2out.eps, nn5out.eps -- from Matlab  (testnn2.m)
+	   Referenced in iterpart/nn.tex
+14.18  Desired output (solid line) and neural network output (dashed line)
+	   nn4out.eps -- from Matlab (testnn2.m)
+	   Referenced in iterpart/nn.tex
+14.19  Effect of convergence rate on $\mu$ and $\alpha$.
+	   nnp1.eps, nnp2.eps, nnp3.eps, nnp4.eps -- from Matlab
+	   (testnn3.m)
+	   Referenced in iterpart/nn.tex
+14.20  The blind-source separation problem
+	   ica1.tex, ica1.ps -- from xfig
+	   Referenced in iterpart/ica.tex
+14.21  The binary entropy function $H(p)$
+	   entplot.eps -- from Matlab (entplot.m)
+	   Referenced in iterpart/ica.tex
+
+15.1   Illustration of projection on a set
+	   pocs.tex, pocs.ps, nonconv.tex, nonconv.ps -- from xfig
+	   Referenced in iterpart/compmap.tex
+15.2   Projection on convex sets in two dimensions
+	   pocs1.tex, pocs1.ps, pocs2.tex, pocs2.ps -- from xfig
+	   Referenced in iterpart/compmap.tex
+15.3   Results of the bandlimited reconstruction algorithm
+	   bliter1.eps, bliter2.eps -- from Matlab (bliter1.m)
+	   Referenced in iterpart/compmap.tex
+15.4   Property sets in $X$ and their intersection $\Pc$
+	   compmap1.tex, compmap1.ps -- from xfig
+	   Referenced in iterpart/compmap.tex
+15.5   Illustration of composition of point-to-set mappings
+	   compmap2.tex, compmap2.ps -- from xfig
+	   Referenced in iterpart/compmap.tex
+15.6   Projection onto a non-convex
+	   compmap3.tex, compmap3.ps -- from xfig
+	   Referenced in iterpart/compmap.tex
+15.7   Producing a positive sequence from the Hamming window
+	   comppos1a.eps, comppos1b.eps -- from Matlab (compmap3.m)
+	   Referenced in iterpart/compmap.tex
+15.8   Applying a composite mapping algorithm to sinusoidal data
+	   compmap31.eps, compmap32.eps, compmap33.eps, compmap34.eps --
+	   from Matlab (expmod.m)
+	   Referenced in iterpart/compmap.tex
+15.9   Geometric properties of convex sets
+	   pocs3.tex, pocs3.ps -- from xfig
+	   Referenced in iterpart/compmap.tex
+15.10  Projection onto two convex sets
+	   pocs4.tex, pocs4.ps -- from xfig
+	   Referenced in iterpart/compmap.tex
+
+16.1   Demonstration of clustering
+	   vq1a.eps, vq1b.eps --- from Matlab (vq1.m)
+	   Referenced in iterpart/cluster.tex
+16.2   Clusters for a pattern recognition problem
+	   patrec1.ps, patrec2.eps -- from Matlab (patrec1.m)
+	   Referenced in iterpart/cluster.tex
+16.3   Illustration of iterative inverse computation
+	   mi1.eps, mi2.eps, mi3.eps, mi4.eps -- from Matlab (moveiter.m)
+	   Referenced in iterpart/iterinv.tex
+16.4   Residual error in the ART algorithm as a function of iteration
+	   art1.eps -- from Matlab (arttest.m)
+	   Referenced in iterpart/iterinv.tex
+16.5   Convergence of conjugate gradient on a quadratic function
+	   conjgrad1.eps  -- from Matlab (ellipsecg.m)
+	   Referenced in iterpart/conjgrad.tex
+
+17.1   An overview of the EM algorithm
+	   emblock.tex, emblock.ps -- from xfig
+	   Referenced in iterpart/emalg.tex
+17.2   Illustration of many-to-one mapping from ${\cal X}$ to ${\cal Y}$
+	   mapfig.tex, mapfig.ps -- from xfig
+	   Referenced in iterpart/emalg.tex
+17.3   Representation of emission computed tomography
+	   et.ps  -- from idraw
+	   Referenced in iterpart/emalg.tex
+17.4   Detector arrangement for tomographic reconstruction example
+	   etd.tex, etd.ps -- from xfig
+	   Referenced in iterpart/emalg.tex
+17.5   Example emission computed tomography reconstruction
+	   et1.eps, et2.eps, et3.eps, et4.eps -- Matlab function (makeim.m)
+	   Referenced in iterpart/emalg.tex
+17.6   Single-microphone ANC system
+	   ancblock.tex -- pure latex figure
+	   Referenced in iterpart/emalg.tex
+17.7   Processor block diagram of the ANC system
+	   ancproc.tex -- pure latex figure
+	   Referenced in iterpart/emalg.tex
+17.8   Illustration of a four-state HMM
+	   hmm.tex, hmm.ps -- from xfig	   
+	   Referenced in iterpart/emalg.tex
+17.9   P(\ybf_1^T|\thetabf^{[k]}) for a HMM
+	   hmmconv.eps -- from Matlab (hmmtest21.m, hmmtet22.m,
+	   hmmtest23.m, hmmtest24.m in succession)
+	   Referenced in iterpart/emalg.tex
+17.10  Representation of signals in a SSMA system
+	   ssmasys.tex -- pure latex
+	   Referenced in iterpart/emalg.tex
+17.11  Multiple-access receiver matched-filter bank
+	   ssmarecv.tex -- pure latex
+	   Referenced in iterpart/emalg.tex
+
+18.1   Examples of minimizing points
+	   minex.tex, minex.ps -- from xfig
+	   Referenced in optpart/optbasic.tex
+18.2   Contours of
+	   $f(x_1,x_2)\protect$, showing minimum and  constrained minimum
+	   min1.eps -- from matlab (min1.m)
+	   Referenced in optpart/optbasic.tex
+18.3   Relationships between variables in composite functions
+	   diffdep0.tex, diffdep0.ps -- from xfig
+	   Referenced in optpart/optbasic.tex
+18.4   Illustration of functional dependencies
+	   diffdep.tex, diffdep.ps -- from xfig
+	   Referenced in optpart/optbasic.tex
+18.5   Surface and contour plots of $f(x_1,x_2)$.
+	   min2.eps, min3.eps -- from Matlab (min2.m)
+	   Referenced in optpart/optbasic.tex
+18.6   Tangent plane to a surface
+	   tanplane.tex, tanplane.ps -- from xfig
+	   Referenced in optpart/optbasic.tex
+18.7   Curves on a surface
+	   tanplane2.tex, tanplane2.ps -- from xfig
+	   Referenced in optpart/optbasic.tex
+18.8   Minimize the distance to an ellipse	   
+	   el1.tex, el1.ps -- from xfig
+	   Referenced in optpart/optbasic.tex
+18.9   The projection of $\Lbf\ybf$ into $P$ to form $L_P$	   
+	   tansubfig.tex, tansubfig.ps -- from xfig
+	   Referenced in optpart/optbasic.tex
+18.10  Duality: nearest point to $K$ is maximum distance to separating hyperplane
+	   duality2.tex, duality2.ps -- from xfig
+	   Referenced in optpart/duality.tex
+18.11  The dual function $g(\lambda)$
+	   duality1.eps -- from Matlab (duality1.m)
+	   Referenced in optpart/duality.tex
+18.12  Saddle surface for minimax optimization
+	   saddle1.eps -- from Matlab (saddle1.m)
+	   Referenced in optpart/duality.tex
+18.13  Illustration of the Kuhn-Tucker condition in a single dimension
+	   kt1.tex, kt1.ps,  kt2.tex, kt2.ps -- from xfig
+	   Referenced in optpart/optbasic.tex
+18.14  Illustration of ``waterfilling'' solution
+	   waterfill1.tex, waterfill1.ps -- from xfig
+	   Referenced in optpart/optbasic.tex
+
+19.1   Graph examples
+	   graph1.tex, graph2.tex -- pure latex
+	   Referenced in optpart/pathalg.tex
+19.2   A multistage graph
+	   graph3.latex -- pure latex
+	   Referenced in optpart/pathalg.tex
+19.3   A trellis diagram
+	   trellis2.tex -- pure latex
+	   Referenced in optpart/pathalg.tex
+19.4   State machine corresponding to a trellis
+	   statemach1.tex, statemach1.ps -- from xfig
+	   Referenced in optpart/pathalg.tex
+19.5   State machine output observed after passing through a noisy channel
+	   statechan.tex, statechan.ps -- from xfig
+	   Referenced in optpart/pathalg.tex
+19.6   Steps in the Viterbi algorithm
+	   vitrun.tex -- pure latex picture
+	   Referenced in optpart/pathalg.tex
+19.7   A trellis with irregular branches
+	   trellis3.tex -- pure latex
+	   Referenced in optpart/pathalg.tex
+19.8   A trellis with multiple outputs
+	   trellis4.tex -- pure latex
+	   Referenced in optpart/pathalg.tex
+(graph) graph in example 19.4.4
+		graph4.tex, graph4.ps -- from xfig
+	   Referenced in optpart/pathalg.tex
+19.9   MLSE detection in ISI
+	   comsig1.tex, comsig1.ps, comsig3.tex, comsig3.ps, comsig2.tex,
+	   comsig2.ps -- from xfig
+	   Referenced in optpart/pathalg.tex
+19.10  Trellis diagram and detector structure for ISI detection
+	   trellis5.tex, trellis5.ps, comsig5.tex, comsig.ps -- from xfig
+	   Referenced in optpart/pathalg.tex
+19.11  CDMA signal model
+	   ssmasys2.tex -- pure latex
+	   cdmasig.tex, cdmasig.ps -- from xfig
+	   Referenced in optpart/pathalg.tex
+19.12  CDMA detection
+	   trellis6.tex, trellis6.ps, ssmarecv2.tex, ssmarecv2.ps  -- from xfig
+	   Referenced in optpart/pathalg.tex
+19.13  Convolutional coding
+	   conv1.tex, conv1.ps, statemach2.tex, statemach2.ps,
+	   trellis7.tex, trellis7.ps -- from xfig
+	   Referenced in optpart/pathalg.tex
+19.14  Comparing HMM training algorithms
+	   hmmcmp.eps -- from Matlab (hmmtest2v.m)
+	   Referenced in optpart/pathalg.tex
+19.15  Illustration of the warping alignment process
+	   warp.ps -- from Idraw
+	   Referenced in optpart/pathalg.tex
+19.16  Probability of failure of network links
+	   pe1.tex, pe1.ps -- from xfig
+	   
+
+20.1   An example of a linear programming problem
+	   lp1.tex, lp1.ps -- from xfig
+	   Referenced in optpart/linprog.tex
+20.2   Illustration of Karmarker's algorithm
+	   klp1.tex, klp1.ps, klp2.tex, klp2.ps, klp3.tex, klp3.ps,
+	   klp4.tex, klp4.ps -- from xfig
+	   Referenced in optpart/karmarker.tex
+20.3   Filter design constraints
+	   filtspec.tex, filtspec.ps -- from xfig
+	   Referenced in optpart/linprog.tex
+20.4   Frequency and impulse response of a filter designed using linear programming
+	   lpfilt.eps -- from Matlab (lpfilttest.m)
+	   Referenced in optpart/linprog.tex
+
+A.1	   Illustration of convex and non-convex sets
+	   convex.tex, convex.ps -- from xfig
+	   Referenced in intropart/basicappdx.tex
+A.2	   Indicator functions for some simple sets
+	   set1.tex, set1.ps -- from xfig
+	   Referenced in intropart/basicappdx.tex
+A.3	   Illustration of a convex function
+	   convexfunct.tex, convexfunct.ps -- fromx fig
+	   Referenced in intropart/basicappdx.tex
+A.4	   Illustration of the definition of continuity
+	   contin1.tex, contin1.ps -- from xfig	   
+	   Referenced in intropart/basicappdx.tex
+A.5	   A constrained optimization problem
+	   river.tex, river.ps -- from xfig
+	   Referenced in intropart/basicappdx.tex
+A.6	   The indicator function for a fuzzy number ``near 10''
+	   fuzzy1.tex, fuzzy1.ps -- from xfig
+	   Referenced in intropart/basicappdx.tex
+A.7	   The set sum
+	   setsum.tex, setsum.ps -- from xfig
+	   Referenced in intropart/basicappdx.tex

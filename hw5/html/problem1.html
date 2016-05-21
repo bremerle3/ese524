@@ -1,0 +1,160 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>problem1</title><meta name="generator" content="MATLAB 8.5"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2016-04-12"><meta name="DC.source" content="problem1.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><pre class="codeinput">echo <span class="string">on</span>
+<span class="comment">%</span>
+<span class="comment">% Problem Statement: Consider the log-likelihood detection problem of two</span>
+<span class="comment">% scalar Gaussians with different means u0 and u1, and common variance</span>
+<span class="comment">% sigma^2. d = abs(u0 - u1) and z = (sigma*eta/d) + d/(2*sigma). The false</span>
+<span class="comment">% alarm probability alpha = Q(z) and the probability of correct detection</span>
+<span class="comment">% PD = Q(z - d) = 0.75. Compute and plot the threshold eta vs alpha.</span>
+<span class="comment">% Explain the plot and interpret the result.</span>
+echo <span class="string">off</span>
+
+<span class="comment">% Find Q(x)</span>
+z=[-6:0.001:6]; q=erfc(z);
+PD = 0.75;
+<span class="comment">% Find the closest value of z-d for Q(z-d)=0.75</span>
+closest_vals = abs(q-PD);
+min_idx = find(closest_vals == min(closest_vals));
+z_d = z(min_idx);
+alpha = [];
+eta = [];
+<span class="comment">% Generate alpha vs eta</span>
+<span class="keyword">for</span> z = 0:0.1:3
+    d = z + z_d;
+    eta = [eta, z*d - (d^2)/2];
+    alpha = [alpha, erfc(z)];
+<span class="keyword">end</span>
+figure;
+plot(alpha, eta, <span class="string">'x'</span>);
+title(<span class="string">'\alpha vs. \eta for P_D = 0.75'</span>);
+ylabel(<span class="string">'Threshold (\eta)'</span>); xlabel(<span class="string">'Test size (\alpha)'</span>);
+
+echo <span class="string">on</span>
+<span class="comment">% Interpretation: Fixing PD = 0.75 also sets the SNR (and therefore the</span>
+<span class="comment">% separator of the two Gaussians, represented by d). For this fixed PD, a</span>
+<span class="comment">% lower threshold results in a large probability of false alarm alpha. I</span>
+<span class="comment">% plotted alpha all the way up to 1, but in reality we would only allow</span>
+<span class="comment">% alpha to reach 0.5 before simply switching the meaning of our hypotheses;</span>
+<span class="comment">% the maximum error for binary detection should be 0.5. As alpha approaches</span>
+<span class="comment">% zero, the corresponding threshold becomes large at an increasing rate. Of</span>
+<span class="comment">% course, we cannot choose a threshold that results in an alpha of zero</span>
+<span class="comment">% since Gaussian tails are infinite.</span>
+</pre><pre class="codeoutput">% 
+% Problem Statement: Consider the log-likelihood detection problem of two 
+% scalar Gaussians with different means u0 and u1, and common variance
+% sigma^2. d = abs(u0 - u1) and z = (sigma*eta/d) + d/(2*sigma). The false
+% alarm probability alpha = Q(z) and the probability of correct detection 
+% PD = Q(z - d) = 0.75. Compute and plot the threshold eta vs alpha.
+% Explain the plot and interpret the result.
+echo off
+</pre><img vspace="5" hspace="5" src="problem1_01.png" alt=""> <p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2015a</a><br></p></div><!--
+##### SOURCE BEGIN #####
+echo on
+% 
+% Problem Statement: Consider the log-likelihood detection problem of two 
+% scalar Gaussians with different means u0 and u1, and common variance
+% sigma^2. d = abs(u0 - u1) and z = (sigma*eta/d) + d/(2*sigma). The false
+% alarm probability alpha = Q(z) and the probability of correct detection 
+% PD = Q(z - d) = 0.75. Compute and plot the threshold eta vs alpha.
+% Explain the plot and interpret the result.
+echo off
+
+% Find Q(x)
+z=[-6:0.001:6]; q=erfc(z);
+PD = 0.75;
+% Find the closest value of z-d for Q(z-d)=0.75
+closest_vals = abs(q-PD);
+min_idx = find(closest_vals == min(closest_vals));
+z_d = z(min_idx);
+alpha = [];
+eta = [];
+% Generate alpha vs eta
+for z = 0:0.1:3
+    d = z + z_d;
+    eta = [eta, z*d - (d^2)/2];
+    alpha = [alpha, erfc(z)];
+end
+figure;
+plot(alpha, eta, 'x');
+title('\alpha vs. \eta for P_D = 0.75');
+ylabel('Threshold (\eta)'); xlabel('Test size (\alpha)');
+
+echo on
+% Interpretation: Fixing PD = 0.75 also sets the SNR (and therefore the
+% separator of the two Gaussians, represented by d). For this fixed PD, a
+% lower threshold results in a large probability of false alarm alpha. I
+% plotted alpha all the way up to 1, but in reality we would only allow
+% alpha to reach 0.5 before simply switching the meaning of our hypotheses;
+% the maximum error for binary detection should be 0.5. As alpha approaches
+% zero, the corresponding threshold becomes large at an increasing rate. Of
+% course, we cannot choose a threshold that results in an alpha of zero
+% since Gaussian tails are infinite.
+##### SOURCE END #####
+--></body></html>

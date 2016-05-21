@@ -1,0 +1,35 @@
+(* A Gram-Schmidt procedure *)
+(* Copyright 1999 by Todd K. Moon *)
+
+gs[p_,a_,b_,w_,t_] :=
+(* p = list of input functions
+   a = lower limit of integration
+   b = upper limit of integration
+   w = weight function
+   t = variable of integration
+*)
+  Module[{i,j,k,q,ek,n1},  (* q = list of output functions *)
+   Nfunc = Length[p];
+   q = {};
+   (* find the first non-null function *)
+   For[k= 1, k <= Nfunc, k++,
+      n1 = Integrate[ p[[k]]^2 w,{t,a,b}];
+      If[n1 != 0, Break[]];
+   ];
+   If[k>Nfunc,
+      Return[q];
+   ];
+   j = 1;
+   q = Append[q,p[[k]]/Sqrt[n1]];
+   (* Now do the rest of them *)
+   For[  , k <= Nfunc, k++,
+      ek = p[[k]] - Sum[ Integrate[p[[k]] q[[i]] w,{t,a,b}] q[[i]],{i,1,j}];
+      n1 = Integrate[ek^2 w,{t,a,b}];  (* find the norm *)
+      If[n1 != 0,     (* if not dependent on the others *)
+         ++j;         (* add it to the list *) 
+         q = Append[q,ek/Sqrt[n1]];
+      ];
+   ];
+   q   (* return value *)
+]
+

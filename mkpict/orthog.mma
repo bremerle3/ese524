@@ -1,0 +1,17 @@
+(* sample file for orthogonalization *)
+(* Copyright 1999 by Todd K. Moon *)
+
+<<Calculus`DiracDelta`   (* load the file that defines UnitStep *)
+<<gs.mma                 (* load the Gram Schmidt function *)
+
+p1 = UnitStep[t] - UnitStep[t-1];
+p2 = UnitStep[t] - 2 UnitStep[t-1/2] + 2 UnitStep[t - 3/4] - UnitStep[t-1];
+p3 = UnitStep[t] - 2 UnitStep[t-1/2] + UnitStep[t - 1];
+p4 = UnitStep[t] - 2 UnitStep[t-1/4] + 2 UnitStep[t - 1/2] - UnitStep[t-1];
+q = gs[{p1,p2,p3,p4},0,1,1,t];
+gq1 = Plot[q[[1]],{t,0,2}];
+gq2 = Plot[q[[2]],{t,0,2}];
+gq3 = Plot[q[[3]],{t,0,2}];
+gq4 = Plot[q[[4]],{t,0,2}];
+gq = Show[GraphicsArray[{{gq1,gq2},{gq3,gq4}}]];
+Display["orthogout.eps",gq,"EPS"]

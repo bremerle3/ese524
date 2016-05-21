@@ -1,0 +1,79 @@
+The files in this directory are data for some of the plots and
+demonstrations in the textbook.
+
+The files come in three categories:
+
+I) Wavelet and scaling function files
+II) Blind source separation demonstration files
+III) Test image for emission tomography example
+
+------------------------------------------------------------------
+
+I) Wavelet and scaling function files
+
+The ascii files
+
+d41
+d42
+d61
+d62
+d81
+d82
+d101
+d102
+d121
+d122
+
+contain scaling functions (file names ending in 1) and wavelet
+functions (file names ending in 2).  The time parameter and the
+function value are represented in these two-column files.
+
+------------------------------------------------------------------
+
+II) Blind source separation demonstration files
+
+They files to demonstrate blind source separation were recorded using
+the xwave tool (v.0.6) on a linux workstation at 8000 samples/second,
+8 bits/sample, using a low-quality (office-style) microphone.
+
+tkm.wav is the voice of Todd Moon, reading about blind source separation.  
+
+ag.wav is the voice of Amy Griffin, reading some nameless memo.
+
+vm.wav is from the track "Voice Male," of the all-vocal group, Voice
+   Male, off their album "up, up and away,"  copyright 1997 Voice
+   Male.  Used by permission.
+
+Recording of the first two sources was accomplished by speaking
+directly into the microphone.  Recording of the third source was
+accomplished by playing the CD into the microphone.  In all cases, the
+artifacts due to the recording process (hiss, pop, and quantization
+noise) can be heard by playing the original unmixed files.  (You
+should really here Voice Male off the original CD to appreciate it!)
+It may be observed thus that the artifacts heard in the final
+separated output files are due mostly to recording artifacts, and not
+the separation process.
+
+.wav files:
+Original (unmixed) files:
+vm.wav
+ag.wav
+tkm.wav
+
+Mixed files (input data):
+bssin1.wav
+bssin2.wav
+bssin3.wav
+
+Separated (output) files:
+bssout1.wav
+bssout2.wav
+bssout3.wav
+
+
+------------------------------------------------------------------
+
+III) Test image for emission tomography example
+
+im1.mat is a simple test image used for the emission tomography
+example.
